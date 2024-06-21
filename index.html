@@ -3,89 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amine LG - Developer</title>
+    <title>Amine LG - Versatile Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #3ad8ff;
+            --secondary-color: #59b6c2;
+            --background-color: #0d1117;
+            --text-color: #c9d1d9;
+            --card-color: #161b22;
+        }
         body, html {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #1a1a1a;
-            color: #ffffff;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
         }
         .container {
-            max-width: 700px;
-            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 0;
         }
         h1 {
-            font-size: 2.8em;
-            margin-bottom: 20px;
-            color: #4CAF50;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 30px;
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         .tagline {
             font-size: 1.5em;
-            font-style: italic;
-            color: #888;
+            color: #8b949e;
             margin-bottom: 30px;
         }
-        .coming-soon {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #4CAF50;
-            margin: 40px 0;
+        .section {
+            margin-bottom: 60px;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .skill {
+            background-color: var(--card-color);
+            color: var(--text-color);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            border: 1px solid var(--primary-color);
+        }
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(58, 134, 255, 0.2);
         }
         .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
             margin-top: 40px;
+            flex-wrap: wrap;
         }
-        .links a {
-            color: #4CAF50;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1em;
-            transition: color 0.3s ease;
-        }
-        .links a:hover {
-            color: #45a049;
-        }
-        .coffee-button {
+        .button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #FFDD00;
-            color: #000000;
-            text-decoration: none;
             border-radius: 5px;
+            text-decoration: none;
             font-weight: bold;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
         }
-        .coffee-button:hover {
-            background-color: #FFE44D;
+        .github-button {
+            background-color: #595a59;
+            color: #ffffff;
+        }
+        .github-button:hover {
+            background-color: #696969;
+        }
+        #github-embed {
+            width: 100%;
+            height: 200px;
+            border: none;
+            overflow: hidden;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .skill-category {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .skill-category h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Amine LG</h1>
-        <p class="tagline">Crafting digital wonders, one line of code at a time</p>
-        <p>I'm a versatile developer with a passion for creating innovative solutions across various domains. From crafting intuitive user interfaces to developing powerful backend systems, I thrive on turning complex problems into elegant, efficient code.</p>
-        <p>My toolkit includes web technologies, mobile app development, data analysis, and even dabbling in machine learning. I'm always eager to explore new technologies and push the boundaries of what's possible in software development.</p>
-        <p class="coming-soon">Exciting new project on the horizon...</p>
-        <p>Stay tuned for a game-changing tool that will revolutionize how we interact with information and boost productivity for developers and knowledge workers alike.</p>
-        <div class="links">
-            <a href="https://github.com/Amine-LG" target="_blank">Explore My Code</a>
-            <a href="https://www.buymeacoffee.com/aminelg" target="_blank" class="coffee-button">
-                ☕ Buy me a coffee
-            </a>
-        </div>
+        <header>
+            <h1>Amine LG</h1>
+            <p class="tagline">Versatile Developer | Problem Solver | Innovation Enthusiast</p>
+        </header>
+
+        <section class="section">
+            <h2>About Me</h2>
+            <p>I'm a passionate and versatile developer with a knack for turning complex challenges into elegant, efficient solutions. My journey in the world of coding has led me to explore and master a wide range of technologies, from front-end frameworks to back-end systems, and even delving into AI and financial technologies.</p>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skills">
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">C++</span>
+                    <span class="skill">MQL4/5</span>
+                    <span class="skill">Pine Script</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Technologies</h3>
+                <div class="skills">
+                    <span class="skill">React</span>
+                    <span class="skill">Node.js</span>
+                    <span class="skill">Svelte</span>
+                    <span class="skill">HTML5</span>
+                    <span class="skill">CSS3</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skills">
+                    <span class="skill">Git</span>
+                    <span class="skill">GitHub</span>
+                    <span class="skill">MongoDB</span>
+                    <span class="skill">Docker</span>
+                    <span class="skill">AI/Machine Learning</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>GitHub Activity</h2>
+            <iframe id="github-embed" src="https://github-readme-stats.vercel.app/api?username=Amine-LG&show_icons=true&theme=dark"></iframe>
+        </section>
+
+        <section class="section">
+            <h2>Let's Connect</h2>
+            <p>I'm always eager to collaborate on exciting projects or discuss the latest in tech. Feel free to reach out or support my work!</p>
+            <div class="links">
+                <a href="https://github.com/Amine-LG" target="_blank" class="button github-button">GitHub Profile</a>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="aminelg" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+            </div>
+        </section>
     </div>
 </body>
 </html>
