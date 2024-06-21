@@ -3,66 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amine LG - AI Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <title>Amine LG - Developer</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 700px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .tagline {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #888;
+            margin-bottom: 30px;
+        }
+        .coming-soon {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 40px 0;
+        }
+        .links {
+            margin-top: 40px;
+        }
+        .links a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        .links a:hover {
+            color: #45a049;
+        }
+        .coffee-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFDD00;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .coffee-button:hover {
+            background-color: #FFE44D;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="https://github.com/Amine-LG" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://www.buymeacoffee.com/aminelg" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="hero">
-            <h1>Amine LG</h1>
-            <p>AI Developer</p>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>AI developer passionate about creating innovative solutions using cutting-edge technologies.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Simple-Web-Test</h3>
-                <p>HTML project.</p>
-                <a href="https://github.com/Amine-LG/Simple-Web-Test" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Obsidian-Text-Transformer-LocalAI</h3>
-                <p>Transform your .txt and .md notes into visually appealing and well-structured Markdown for Obsidian, powered by local LLMs using Ollama.</p>
-                <a href="https://github.com/Amine-LG/Obsidian-Text-Transformer-LocalAI" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Llava-Discord-Bot</h3>
-                <p>A Discord chatbot to interact with Llava model.</p>
-                <a href="https://github.com/Amine-LG/Llava-Discord-Bot" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Discord-Ollama-ChatBot</h3>
-                <p>Simple Discord Ollama ChatBot.</p>
-                <a href="https://github.com/Amine-LG/Discord-Ollama-ChatBot" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Quick-Access-Menu</h3>
-                <p>A Custom Quick Access Menu with HTML, CSS, JS.</p>
-                <a href="https://github.com/Amine-LG/Quick-Access-Menu" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Amine LG. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <h1>Amine LG</h1>
+        <p class="tagline">Crafting digital wonders, one line of code at a time</p>
+        <p>I'm a versatile developer with a passion for creating innovative solutions across various domains. From crafting intuitive user interfaces to developing powerful backend systems, I thrive on turning complex problems into elegant, efficient code.</p>
+        <p>My toolkit includes web technologies, mobile app development, data analysis, and even dabbling in machine learning. I'm always eager to explore new technologies and push the boundaries of what's possible in software development.</p>
+        <p class="coming-soon">Exciting new project on the horizon...</p>
+        <p>Stay tuned for a game-changing tool that will revolutionize how we interact with information and boost productivity for developers and knowledge workers alike.</p>
+        <div class="links">
+            <a href="https://github.com/Amine-LG" target="_blank">Explore My Code</a>
+            <a href="https://www.buymeacoffee.com/aminelg" target="_blank" class="coffee-button">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </div>
 </body>
 </html>
